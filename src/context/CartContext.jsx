@@ -98,7 +98,8 @@ export const CartProvider = ({ children }) => {
   const subtotalRupees = Math.round(subtotalPaise / 100);
   const deliveryFee = subtotalRupees > 0 ? (subtotalRupees > 500 ? 0 : 35) : 0;
   const platformFee = subtotalRupees > 0 ? 7 : 0;
-  const grandTotal = subtotalRupees + deliveryFee + platformFee;
+  const taxes = subtotalRupees > 0 ? Math.round(subtotalRupees * 0.05) : 0;
+  const grandTotal = subtotalRupees + deliveryFee + platformFee + taxes;
 
   return (
     <CartContext.Provider
