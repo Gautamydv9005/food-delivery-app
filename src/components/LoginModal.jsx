@@ -5,11 +5,11 @@ import { useAuth } from "../context/AuthContext";
 export const LoginModal = () => {
   const { isLoginModalOpen, closeLoginModal, login } = useAuth();
   const [isSignUp, setIsSignUp] = useState(false);
-  const [phone, setPhone] = useState("9876543210");
-  const [name, setName] = useState("Gaurav Yadav");
-  const [email, setEmail] = useState("gaurav@bitedash.com");
+  const [phone, setPhone] = useState("");
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
   const [step, setStep] = useState("PHONE");
-  const [otp, setOtp] = useState("4321");
+  const [otp, setOtp] = useState("");
 
   if (!isLoginModalOpen) return null;
 
@@ -49,7 +49,12 @@ export const LoginModal = () => {
                 or{" "}
                 <button 
                   className="text-rose-600 font-extrabold hover:underline cursor-pointer" 
-                  onClick={() => setIsSignUp(!isSignUp)}
+                  onClick={() => {
+                    setIsSignUp(!isSignUp);
+                    setName("");
+                    setEmail("");
+                    setPhone("");
+                  }}
                 >
                   {isSignUp ? "login to your account" : "create an account"}
                 </button>
