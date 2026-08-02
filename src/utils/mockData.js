@@ -403,15 +403,15 @@ export const MOCK_RESTAURANT_MENUS = {
       {
         title: "Recommended Pizzas",
         itemCards: [
-          { card: { info: { id: "ph1", name: "Margherita Supreme Pizza", price: 29900, description: "Classic cheese pizza with fresh mozzarella & basil herbs", isVeg: true, rating: "4.5", bestseller: true } } },
-          { card: { info: { id: "ph2", name: "Chicken Pepperoni Pizza", price: 44900, description: "Loaded with spicy chicken pepperoni & double mozzarella cheese", isVeg: false, rating: "4.6", bestseller: true } } },
-          { card: { info: { id: "ph3", name: "Veggie Feast Pizza", price: 34900, description: "Onion, capsicum, mushroom, corn & fresh tomatoes", isVeg: true, rating: "4.2" } } }
+          { card: { info: { id: "ph1", name: "Margherita Supreme Pizza", price: 29900, description: "Classic cheese pizza with fresh mozzarella & basil herbs", isVeg: true, rating: "4.5", bestseller: true, imageId: "https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&q=80&w=400" } } },
+          { card: { info: { id: "ph2", name: "Chicken Pepperoni Pizza", price: 44900, description: "Loaded with spicy chicken pepperoni & double mozzarella cheese", isVeg: false, rating: "4.6", bestseller: true, imageId: "https://images.unsplash.com/photo-1628840042765-356cda07504e?auto=format&fit=crop&q=80&w=400" } } },
+          { card: { info: { id: "ph3", name: "Veggie Feast Pizza", price: 34900, description: "Onion, capsicum, mushroom, corn & fresh tomatoes", isVeg: true, rating: "4.2", imageId: "https://images.unsplash.com/photo-1574071318508-1cdbab80d002?auto=format&fit=crop&q=80&w=400" } } }
         ]
       },
       {
         title: "Sides & Garlic Bread",
         itemCards: [
-          { card: { info: { id: "ph4", name: "Garlic Breadstick Stuffed", price: 14900, description: "Freshly baked garlic sticks stuffed with creamy cheese", isVeg: true, rating: "4.4" } } }
+          { card: { info: { id: "ph4", name: "Garlic Breadstick Stuffed", price: 14900, description: "Freshly baked garlic sticks stuffed with creamy cheese", isVeg: true, rating: "4.4", imageId: "https://images.unsplash.com/photo-1573140247632-f8fd74997d5c?auto=format&fit=crop&q=80&w=400" } } }
         ]
       }
     ]
@@ -431,9 +431,9 @@ export const MOCK_RESTAURANT_MENUS = {
       {
         title: "Signature Biryanis",
         itemCards: [
-          { card: { info: { id: "mf1", name: "Meghana Special Chicken Biryani", price: 36000, description: "Boneless chicken gravy biryani served with raita and mirchi ka salan", isVeg: false, rating: "4.7", bestseller: true } } },
-          { card: { info: { id: "mf2", name: "Paneer Biryani", price: 31000, description: "Rich spicy paneer gravy with fragrant basmati rice", isVeg: true, rating: "4.5", bestseller: true } } },
-          { card: { info: { id: "mf3", name: "Mutton Dum Biryani", price: 44000, description: "Slow cooked tender mutton with authentic Andhra spices", isVeg: false, rating: "4.6" } } }
+          { card: { info: { id: "mf1", name: "Meghana Special Chicken Biryani", price: 36000, description: "Boneless chicken gravy biryani served with raita and mirchi ka salan", isVeg: false, rating: "4.7", bestseller: true, imageId: "https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?auto=format&fit=crop&q=80&w=400" } } },
+          { card: { info: { id: "mf2", name: "Paneer Biryani", price: 31000, description: "Rich spicy paneer gravy with fragrant basmati rice", isVeg: true, rating: "4.5", bestseller: true, imageId: "https://images.unsplash.com/photo-1631452180519-c014fe946bc7?auto=format&fit=crop&q=80&w=400" } } },
+          { card: { info: { id: "mf3", name: "Mutton Dum Biryani", price: 44000, description: "Slow cooked tender mutton with authentic Andhra spices", isVeg: false, rating: "4.6", imageId: "https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&q=80&w=400" } } }
         ]
       }
     ]
@@ -453,8 +453,8 @@ export const MOCK_RESTAURANT_MENUS = {
       {
         title: "Famous Colaba Kebabs",
         itemCards: [
-          { card: { info: { id: "bad1", name: "Chicken Seekh Kebab Roll", price: 26000, description: "Iconic Mumbai street food seekh kebab wrapped in hot rumali roti", isVeg: false, rating: "4.6", bestseller: true } } },
-          { card: { info: { id: "bad2", name: "Mutton Boti Kebab", price: 38000, description: "Charcoal grilled tender mutton pieces marinated in aromatic spices", isVeg: false, rating: "4.7", bestseller: true } } }
+          { card: { info: { id: "bad1", name: "Chicken Seekh Kebab Roll", price: 26000, description: "Iconic Mumbai street food seekh kebab wrapped in hot rumali roti", isVeg: false, rating: "4.6", bestseller: true, imageId: "https://images.unsplash.com/photo-1626777552726-4a6b54c97e46?auto=format&fit=crop&q=80&w=400" } } },
+          { card: { info: { id: "bad2", name: "Mutton Boti Kebab", price: 38000, description: "Charcoal grilled tender mutton pieces marinated in aromatic spices", isVeg: false, rating: "4.7", bestseller: true, imageId: "https://images.unsplash.com/photo-1599487488170-d11ec9c172f0?auto=format&fit=crop&q=80&w=400" } } }
         ]
       }
     ]
@@ -474,8 +474,8 @@ export const MOCK_RESTAURANT_MENUS = {
       {
         title: "Old Delhi Classics",
         itemCards: [
-          { card: { info: { id: "kar1", name: "Karim's Mutton Korma", price: 42000, description: "Authentic rich royal mutton gravy cooked in pure ghee", isVeg: false, rating: "4.8", bestseller: true } } },
-          { card: { info: { id: "kar2", name: "Tandoori Roti", price: 3000, description: "Fresh clay oven baked wheat roti", isVeg: true, rating: "4.5" } } }
+          { card: { info: { id: "kar1", name: "Karim's Mutton Korma", price: 42000, description: "Authentic rich royal mutton gravy cooked in pure ghee", isVeg: false, rating: "4.8", bestseller: true, imageId: "https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&q=80&w=400" } } },
+          { card: { info: { id: "kar2", name: "Tandoori Roti", price: 3000, description: "Fresh clay oven baked wheat roti", isVeg: true, rating: "4.5", imageId: "https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&q=80&w=400" } } }
         ]
       }
     ]
@@ -495,8 +495,8 @@ export const MOCK_RESTAURANT_MENUS = {
       {
         title: "World Famous Hyderabadi Biryani",
         itemCards: [
-          { card: { info: { id: "par1", name: "Special Chicken Dum Biryani", price: 37000, description: "Authentic Hyderabadi saffron basmati rice with succulent chicken", isVeg: false, rating: "4.8", bestseller: true } } },
-          { card: { info: { id: "par2", name: "Double Ka Meetha", price: 12000, description: "Traditional Hyderabadi bread pudding topped with pistachios", isVeg: true, rating: "4.6" } } }
+          { card: { info: { id: "par1", name: "Special Chicken Dum Biryani", price: 37000, description: "Authentic Hyderabadi saffron basmati rice with succulent chicken", isVeg: false, rating: "4.8", bestseller: true, imageId: "https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?auto=format&fit=crop&q=80&w=400" } } },
+          { card: { info: { id: "par2", name: "Double Ka Meetha", price: 12000, description: "Traditional Hyderabadi bread pudding topped with pistachios", isVeg: true, rating: "4.6", imageId: "https://images.unsplash.com/photo-1551024709-8f23befc6f87?auto=format&fit=crop&q=80&w=400" } } }
         ]
       }
     ]
@@ -516,8 +516,8 @@ export const MOCK_RESTAURANT_MENUS = {
       {
         title: "FC Road Classics",
         itemCards: [
-          { card: { info: { id: "vai1", name: "Vaishali Special Masala Dosa", price: 14000, description: "Crispy golden butter dosa served with spicy potato & coconut chutney", isVeg: true, rating: "4.8", bestseller: true } } },
-          { card: { info: { id: "vai2", name: "Special South Indian Filter Coffee", price: 6000, description: "Hot frothy decoction filter coffee", isVeg: true, rating: "4.9", bestseller: true } } }
+          { card: { info: { id: "vai1", name: "Vaishali Special Masala Dosa", price: 14000, description: "Crispy golden butter dosa served with spicy potato & coconut chutney", isVeg: true, rating: "4.8", bestseller: true, imageId: "https://images.unsplash.com/photo-1668236543090-82eba5ee5976?auto=format&fit=crop&q=80&w=400" } } },
+          { card: { info: { id: "vai2", name: "Special South Indian Filter Coffee", price: 6000, description: "Hot frothy decoction filter coffee", isVeg: true, rating: "4.9", bestseller: true, imageId: "https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&q=80&w=400" } } }
         ]
       }
     ]
